@@ -9,16 +9,15 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL_Penholder1.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL_Penholder.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
     <div class="webgl-content">
       <div id="unityContainer" style="width: 100%; margin: 0"></div>
       <div class="footer">
-        <!-- <div class="webgl-logo"></div> -->
         <div class="fullscreen" onmousedown="unityInstance.SetFullscreen(1)"></div>
-       </div>
+      </div>
     </div>
   </body>
 </html>
